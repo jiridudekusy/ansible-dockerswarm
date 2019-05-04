@@ -1,11 +1,9 @@
 Ansible Role: Docker Swarm
 ==========================
 
-[![Build Status](https://travis-ci.org/atosatto/ansible-dockerswarm.svg?branch=master)](https://travis-ci.org/atosatto/ansible-dockerswarm)
-[![Galaxy](http://img.shields.io/badge/galaxy-atosatto.docker--swarm-blue.svg?style=flat-square)](https://galaxy.ansible.com/atosatto/docker-swarm)
+This repository is fork of "https://github.com/atosatto/ansible-dockerswarm". Only CentOS/RHEL is supported and it has been fixed to follow : https://docs.docker.com/install/linux/docker-ce/centos/ .
 
-Setup a Docker Swarm cluster on RHEL/CentOS and Debian/Ubuntu servers
-using Docker Engine's "Swarm Mode" (https://docs.docker.com/engine/swarm/).
+Setup a Docker Swarm cluster on RHEL/CentOS using Docker Engine's "Swarm Mode" (https://docs.docker.com/engine/swarm/).
 
 Requirements
 ------------
@@ -143,7 +141,7 @@ The `MOLECULE_DRIVER_NAME` and `MOLECULE_TARGET_DISTRO` allows to change the Mol
 
     $ MOLECULE_DRIVER_NAME=vagrant MOLECULE_TARGET_DISTRO=ubuntu-1604 tox
 
-To test the role on Ubuntu instead of CentOS set the 
+To test the role on Ubuntu instead of CentOS set the
 
 License
 -------
